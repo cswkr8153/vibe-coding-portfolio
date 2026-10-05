@@ -1,9 +1,9 @@
 .hero-bg {
   min-height: 100vh;
   background:
-    radial-gradient(circle at 18% 28%, rgba(125, 211, 252, 0.55), transparent 28%),
-    radial-gradient(circle at 82% 42%, rgba(3, 105, 161, 0.12), transparent 32%),
-    linear-gradient(180deg, #e8f6ff 0%, #d4ecfb 48%, #e6f4fd 100%);
+    radial-gradient(circle at 18% 28%, rgba(253, 186, 116, 0.55), transparent 28%),
+    radial-gradient(circle at 82% 42%, rgba(194, 65, 12, 0.12), transparent 32%),
+    linear-gradient(180deg, #fff3e6 0%, #ffe6cc 48%, #fff0e0 100%);
 }
 
 .blob {
@@ -18,7 +18,7 @@
   top: 70px;
   width: 280px;
   height: 340px;
-  background: rgba(125, 211, 252, 0.5);
+  background: rgba(253, 186, 116, 0.5);
   transform: rotate(-18deg);
 }
 
@@ -27,28 +27,28 @@
   top: 90px;
   width: 220px;
   height: 260px;
-  background: rgba(56, 189, 248, 0.3);
+  background: rgba(251, 146, 60, 0.3);
 }
 
 .portrait-ring {
   position: absolute;
   border-radius: 999px;
-  border: 10px solid rgba(3, 105, 161, 0.18);
+  border: 10px solid rgba(194, 65, 12, 0.18);
 }
 
 .ring-outer {
   inset: 0;
   border-width: 14px;
-  border-color: rgba(3, 105, 161, 0.16);
+  border-color: rgba(194, 65, 12, 0.16);
   animation: spin-slow 18s linear infinite;
 }
 
 .ring-mid {
   inset: 8%;
   border-width: 18px;
-  border-color: #0369a1;
+  border-color: #c2410c;
   border-top-color: transparent;
-  border-left-color: rgba(3, 105, 161, 0.25);
+  border-left-color: rgba(194, 65, 12, 0.25);
   animation: spin-slow 12s linear infinite reverse;
 }
 
@@ -59,7 +59,7 @@
 
 .nav-link:hover,
 .nav-link.is-active {
-  color: #0369a1;
+  color: #c2410c;
 }
 
 .skill-bar {
