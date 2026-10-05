@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soowoon's Portfolio</title>
+    <meta
+      name="description"
+      content="Semiconductor Engineer Portfolio"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              mint: {
+                50: "#f0f9ff",
+                100: "#e0f2fe",
+                200: "#bae6fd",
+                300: "#7dd3fc",
+              },
+              forest: {
+                700: "#0369a1",
+                800: "#075985",
+                900: "#0c4a6e",
+              },
+              ink: "#1c2434",
+            },
+            fontFamily: {
+              sans: ["Plus Jakarta Sans", "system-ui", "sans-serif"],
+            },
+            boxShadow: {
+              nav: "0 10px 30px rgba(3, 105, 161, 0.08)",
+              card: "0 18px 40px rgba(3, 105, 161, 0.10)",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="bg-mint-50 text-ink font-sans antialiased">
+    <header
+      id="site-header"
+      class="fixed inset-x-0 top-0 z-50 transition-all duration-300"
+    >
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div
+          class="mt-4 flex items-center justify-between rounded-full bg-white/90 px-5 py-3 shadow-nav backdrop-blur-md"
+        >
+          <a href="#home" class="text-lg font-extrabold tracking-tight">
+            <span class="text-forest-700">CSW</span><span class="text-ink"></span>
+          </a>
+
+          <nav class="hidden items-center gap-4 text-[13px] font-medium text-slate-600 xl:gap-7 xl:text-sm lg:flex" aria-label="Primary">
+            <a href="#home" class="nav-link text-forest-700">Home</a>
+            <a href="#about" class="nav-link">About Me</a>
+            <a href="#experience" class="nav-link">Experience</a>
+            <a href="#skills" class="nav-link">Skills</a>
+          </nav>
+
+          <div class="flex items-center gap-3">
+            <a
+              href="#contact"
+              class="hidden rounded-full bg-forest-800 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-forest-900 sm:inline-flex"
+            >
+              Contact me
+            </a>
+            <button
+              id="menu-btn"
+              class="inline-flex min-h-11 min-w-11 items-center justify-center rounded-full border border-slate-200 text-forest-800 lg:hidden"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+              aria-label="Open menu"
+            >
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7h16M4 12h16M4 17h16" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div id="mobile-menu" class="hidden px-4 pt-3 lg:hidden">
+        <nav class="rounded-3xl bg-white p-4 shadow-card" aria-label="Mobile">
+          <div class="grid gap-1 text-sm font-medium">
+            <a href="#home" class="rounded-xl px-4 py-3 hover:bg-mint-100">Home</a>
+            <a href="#about" class="rounded-xl px-4 py-3 hover:bg-mint-100">About Me</a>
+            <a href="#experience" class="rounded-xl px-4 py-3 hover:bg-mint-100">Experience</a>
+            <a href="#skills" class="rounded-xl px-4 py-3 hover:bg-mint-100">Skills</a>
+            <a href="#contact" class="mt-2 rounded-full bg-forest-800 px-4 py-3 text-center text-white">CONTACT ME</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero-bg relative overflow-hidden pt-32 pb-16 sm:pt-36 lg:pt-40 lg:pb-24">
+        <div class="blob blob-left"></div>
+        <div class="blob blob-right"></div>
+        <svg class="deco-wave absolute bottom-16 left-24 hidden h-10 w-16 text-forest-700/40 lg:block" viewBox="0 0 64 24" fill="none">
+          <path d="M2 12c6-10 12 10 18 0s12 10 18 0 12 10 18 0" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
+        </svg>
+        <svg class="deco-dots absolute right-[18%] top-28 hidden text-forest-700/30 lg:block" width="46" height="46" viewBox="0 0 46 46">
+          <circle cx="6" cy="6" r="3" fill="currentColor" />
+          <circle cx="23" cy="6" r="3" fill="currentColor" />
+          <circle cx="40" cy="6" r="3" fill="currentColor" />
+          <circle cx="6" cy="23" r="3" fill="currentColor" />
+          <circle cx="23" cy="23" r="3" fill="currentColor" />
+          <circle cx="40" cy="23" r="3" fill="currentColor" />
+          <circle cx="6" cy="40" r="3" fill="currentColor" />
+          <circle cx="23" cy="40" r="3" fill="currentColor" />
+          <circle cx="40" cy="40" r="3" fill="currentColor" />
+        </svg>
+
+        <div class="relative mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
+          <div class="max-w-xl">
+            <h1 class="text-4xl font-extrabold leading-tight tracking-tight text-ink sm:text-5xl lg:text-[56px]">
+              Soowoon Chung
+            </h1>
+            <p class="mt-6 max-w-md text-sm leading-7 text-slate-600 sm:text-base">
+              I’m a semiconductor engineer with 9 years of experience in the semiconductor industry. 
+            </p>
+            <div class="mt-8 flex flex-wrap items-center gap-3">
+              <a
+                href="#about"
+                class="inline-flex min-h-11 items-center rounded-full bg-sky-500/80 px-6 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-sky-600"
+              >
+                LEARN MORE
+              </a>
+              <a
+                href="#contact"
+                class="inline-flex min-h-11 items-center rounded-full bg-forest-900 px-6 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-black"
+              >
+                CONTACT ME
+              </a>
+            </div>
+          </div>
+
+          <div class="relative mx-auto flex h-[300px] w-[300px] items-center justify-center sm:h-[380px] sm:w-[380px] lg:h-[440px] lg:w-[440px]">
+            <div class="portrait-ring ring-outer"></div>
+            <div class="portrait-ring ring-mid"></div>
+            <div class="flex h-[72%] w-[72%] items-center justify-center overflow-hidden rounded-full bg-forest-700 shadow-card">
+              <img
+                src="images/CreatedPic.png"
+                alt="Portrait of Soowoon Chung"
+                class="h-full w-full object-cover object-top"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="bg-white py-20 sm:py-24">
+        <div class="mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
+          <div class="relative">
+            <div class="absolute -left-4 -top-4 h-24 w-24 rounded-3xl bg-mint-200"></div>
+            <img
+              src="images/analysis.svg"
+              alt="Illustration of a TEM cross-section of a transistor, an SEM beam view and an EDS spectrum"
+              class="relative z-10 w-full rounded-[32px] object-cover shadow-card"
+            />
+          </div>
+          <div>
+            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-forest-700">About Me</p>
+            <h2 class="mt-3 text-3xl font-extrabold sm:text-4xl">Seeing what's inside the chip</h2>
+            <p class="mt-5 text-slate-600 leading-7">
+              I'm a semiconductor engineer specializing in material analysis. For 9 years, I have
+              used TEM and SEM to examine device structures at the nanometer scale, helping teams
+              understand process results, find the root cause of defects, and make confident
+              engineering decisions based on data.
+            </p>
+            <ul class="mt-6 grid gap-3 text-sm text-slate-700 sm:grid-cols-2">
+              <li class="rounded-2xl bg-mint-100 px-4 py-3">9 years in the semiconductor industry</li>
+              <li class="rounded-2xl bg-mint-100 px-4 py-3">TEM (Transmission Electron Microscopy)</li>
+              <li class="rounded-2xl bg-mint-100 px-4 py-3">SEM (Scanning Electron Microscopy)</li>
+              <li class="rounded-2xl bg-mint-100 px-4 py-3">Failure &amp; structural analysis</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="bg-mint-50 py-20 sm:py-24">
+        <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+          <div class="text-center">
+            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-forest-700">Experience</p>
+            <h2 class="mt-3 text-3xl font-extrabold sm:text-4xl">My career so far</h2>
+          </div>
+          <ol class="mt-12 space-y-6 border-l-2 border-mint-300 pl-6 sm:pl-8">
+            <li class="relative rounded-3xl bg-white p-6 shadow-card sm:p-8">
+              <span class="absolute -left-[35px] top-8 h-4 w-4 rounded-full border-4 border-mint-50 bg-forest-700 sm:-left-[43px]"></span>
+              <p class="text-sm font-semibold text-forest-700">2023 – Present</p>
+              <h3 class="mt-1 text-lg font-bold">Aurora Semiconductor · Senior Analysis Engineer</h3>
+              <p class="mt-3 text-sm leading-6 text-slate-600">Lead TEM and SEM cross-section analysis for advanced logic devices, identify the root cause of process defects, and report findings to process and design teams.</p>
+            </li>
+            <li class="relative rounded-3xl bg-white p-6 shadow-card sm:p-8">
+              <span class="absolute -left-[35px] top-8 h-4 w-4 rounded-full border-4 border-mint-50 bg-forest-700 sm:-left-[43px]"></span>
+              <p class="text-sm font-semibold text-forest-700">2020 – 2023</p>
+              <h3 class="mt-1 text-lg font-bold">Nova Foundry · Analysis Engineer</h3>
+              <p class="mt-3 text-sm leading-6 text-slate-600">Performed TEM and SEM analysis to support yield improvement and new process development, and shortened the analysis turnaround time by improving the sample preparation workflow.</p>
+            </li>
+            <li class="relative rounded-3xl bg-white p-6 shadow-card sm:p-8">
+              <span class="absolute -left-[35px] top-8 h-4 w-4 rounded-full border-4 border-mint-50 bg-forest-700 sm:-left-[43px]"></span>
+              <p class="text-sm font-semibold text-forest-700">2017 – 2020</p>
+              <h3 class="mt-1 text-lg font-bold">Helix Devices · Junior Analysis Engineer</h3>
+              <p class="mt-3 text-sm leading-6 text-slate-600">Started my career in the failure analysis lab, learning sample preparation and SEM imaging, and supporting daily analysis requests from device and process engineers.</p>
+            </li>
+          </ol>
+          <p class="mt-8 text-center text-sm text-slate-500">
+            The companies and career details above are fictional and created for demonstration purposes only.
+          </p>
+        </div>
+      </section>
+
+      <section id="skills" class="bg-white py-20 sm:py-24">
+        <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+          <div class="text-center">
+            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-forest-700">Skills</p>
+            <h2 class="mt-3 text-3xl font-extrabold sm:text-4xl">What I work with</h2>
+          </div>
+          <div class="mt-12 grid gap-6 md:grid-cols-3">
+            <article class="rounded-3xl border border-mint-200 bg-mint-50 p-6 sm:p-8">
+              <h3 class="text-lg font-bold">Analysis Equipment</h3>
+              <ul class="mt-4 flex flex-wrap gap-2 text-sm font-medium text-forest-900">
+                <li class="rounded-full bg-mint-200 px-4 py-1.5">TEM</li>
+                <li class="rounded-full bg-mint-200 px-4 py-1.5">SEM</li>
+                <li class="rounded-full bg-mint-200 px-4 py-1.5">FIB</li>
+                <li class="rounded-full bg-mint-200 px-4 py-1.5">EDS</li>
+              </ul>
+            </article>
+            <article class="rounded-3xl border border-mint-200 bg-mint-50 p-6 sm:p-8">
+              <h3 class="text-lg font-bold">Analysis Techniques</h3>
+              <ul class="mt-4 flex flex-wrap gap-2 text-sm font-medium text-forest-900">
+                <li class="rounded-full bg-mint-200 px-4 py-1.5">Cross-section Analysis</li>
+                <li class="rounded-full bg-mint-200 px-4 py-1.5">Failure Analysis</li>
+                <li class="rounded-full bg-mint-200 px-4 py-1.5">Sample Preparation</li>
+                <li class="rounded-full bg-mint-200 px-4 py-1.5">Defect Root Cause</li>
+              </ul>
+            </article>
+            <article class="rounded-3xl border border-mint-200 bg-mint-50 p-6 sm:p-8">
+              <h3 class="text-lg font-bold">Data &amp; Reporting</h3>
+              <ul class="mt-4 flex flex-wrap gap-2 text-sm font-medium text-forest-900">
+                <li class="rounded-full bg-mint-200 px-4 py-1.5">Spotfire</li>
+                <li class="rounded-full bg-mint-200 px-4 py-1.5">Data Analysis</li>
+                <li class="rounded-full bg-mint-200 px-4 py-1.5">Statistical Analysis</li>
+                <li class="rounded-full bg-mint-200 px-4 py-1.5">Technical Reporting</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="bg-mint-50 py-20 sm:py-24">
+        <div class="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
+          <p class="text-sm font-semibold uppercase tracking-[0.2em] text-forest-700">Contact</p>
+          <h2 class="mt-3 text-3xl font-extrabold sm:text-4xl">Curious about my career?</h2>
+          <p class="mt-5 text-slate-600">If you have any questions about my experience or career, feel free to reach out. I will get back to you as soon as I can.</p>
+          <a href="mailto:chungs9192@gmail.com" class="mt-8 inline-flex min-h-11 items-center rounded-full bg-forest-800 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-forest-900">chungs9192@gmail.com</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-mint-200 bg-mint-50 py-8">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <p class="rounded-2xl bg-white px-5 py-4 text-center text-sm font-medium text-forest-800 shadow-nav">
+          This is a sample website. Some of the content (including companies, career details, skills and images) is fictional and was created for demonstration purposes only.
+        </p>
+        <div class="mt-6 flex flex-col items-center justify-between gap-4 text-sm text-slate-600 sm:flex-row">
+          <p>© <span id="year"></span> Soowoon Chung. All rights reserved.</p>
+          <a href="#home" class="font-semibold text-forest-800">Back to top</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

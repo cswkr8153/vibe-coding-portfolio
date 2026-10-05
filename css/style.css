@@ -1,0 +1,90 @@
+.hero-bg {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 18% 28%, rgba(125, 211, 252, 0.55), transparent 28%),
+    radial-gradient(circle at 82% 42%, rgba(3, 105, 161, 0.12), transparent 32%),
+    linear-gradient(180deg, #e8f6ff 0%, #d4ecfb 48%, #e6f4fd 100%);
+}
+
+.blob {
+  position: absolute;
+  border-radius: 999px;
+  filter: blur(2px);
+  pointer-events: none;
+}
+
+.blob-left {
+  left: -80px;
+  top: 70px;
+  width: 280px;
+  height: 340px;
+  background: rgba(125, 211, 252, 0.5);
+  transform: rotate(-18deg);
+}
+
+.blob-right {
+  right: -40px;
+  top: 90px;
+  width: 220px;
+  height: 260px;
+  background: rgba(56, 189, 248, 0.3);
+}
+
+.portrait-ring {
+  position: absolute;
+  border-radius: 999px;
+  border: 10px solid rgba(3, 105, 161, 0.18);
+}
+
+.ring-outer {
+  inset: 0;
+  border-width: 14px;
+  border-color: rgba(3, 105, 161, 0.16);
+  animation: spin-slow 18s linear infinite;
+}
+
+.ring-mid {
+  inset: 8%;
+  border-width: 18px;
+  border-color: #0369a1;
+  border-top-color: transparent;
+  border-left-color: rgba(3, 105, 161, 0.25);
+  animation: spin-slow 12s linear infinite reverse;
+}
+
+.nav-link {
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link.is-active {
+  color: #0369a1;
+}
+
+.skill-bar {
+  transform-origin: left center;
+  transform: scaleX(0);
+  animation: fill-bar 1.2s ease forwards;
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fill-bar {
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-bg {
+    min-height: auto;
+  }
+}
